@@ -1,0 +1,42 @@
+Erwin Bai & Hansen Han
+
+Jun 25: allocated memory for array of stats(stats.c)
+	finished basic math caculation of min_delay, avg_delay and Max_Delay
+Jun 28: Completed stats.C, started reviewing Semophere and bbuffer.c
+	// int    sem_close(sem_t *);
+	// int    sem_destroy(sem_t *);
+	// int    sem_getvalue(sem_t *, int *);
+	// int    sem_init(sem_t *, int, unsigned int);
+	// sem_t *sem_open(const char *, int, ...);
+	// int    sem_post(sem_t *);
+	// int    sem_trywait(sem_t *);
+	// int    sem_unlink(const char *);
+	// int    sem_wait(sem_t *);
+
+Completed knowledge on these build in function in Semophere.h
+	http://brickos.sourceforge.net/docs/APIs/html-c/semaphore_8h.html
+We only used 
+	// int    sem_init(sem_t *, int, unsigned int);
+	// int    sem_wait(sem_t *);
+	// int    sem_post(sem_t *);
+We used sem_init to intialize our semaphores
+We used sem_post and sem_wait for acting like a lock with mutex
+
+July 1: completed locks and critical section
+	 completed bbuffers
+	 Started doing candykids
+	 completed basic statement extraction steps 1- 3
+July 3:  completed steps 4-10, detected few errors in stats.C, bbuffer.c
+         fixing critical section and math caculation of bbuffer.c and stats.c
+
+July 4: continue doing what we are doing on July 3
+
+July 5: Fixed the problem and changing stats_display in stats.c to fit more like sample output
+	added more comments and printf to look like sample output
+
+July 8: Fixed final few error in our code and completed all free for valgrind checking
+
+
+	Still trying to fix few conor case that have a delay of thousands. 
+
+
