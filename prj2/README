@@ -1,0 +1,1 @@
+A UNIX shell which accepts commands and executes in separate process. Designed it as multi-process to read commands and allow child process run in background.
